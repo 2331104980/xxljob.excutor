@@ -39,8 +39,8 @@ export class AppController {
       {
         logId: body.logId, // 本次调度日志ID
         logDateTim: body.logDateTime, // 本次调度日志时间
-        handle_code: 500,
-        handle_message: 'success',
+        handleCode: 200,
+        handleMsg: 'success',
       },
     ];
     const callbackUrl = `${process.env.xxljobadminurl}/api/callback`;
