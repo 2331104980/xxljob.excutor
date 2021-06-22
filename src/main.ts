@@ -14,6 +14,6 @@ async function bootstrap() {
   const registryValue = `http://${ip}:${port}/`;
 
   const xxlJobAdminUrl = `${process.env.xxljobadminurl}/api/registry`; //`http://pc.vanelink:8080/xxl-job-admin/api/registry`;
-  xxlJobExcutor.registry(registryKey, registryValue, xxlJobAdminUrl, 3000);
+  xxlJobExcutor.registry(registryKey, registryValue, xxlJobAdminUrl, 30000);
 }
 bootstrap();
