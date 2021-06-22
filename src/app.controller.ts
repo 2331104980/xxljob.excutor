@@ -43,9 +43,12 @@ export class AppController {
         handleMsg: 'success',
       },
     ];
+    console.log(data);
     const callbackUrl = `${process.env.xxljobadminurl}/api/callback`;
     this.xxljobExcutor.callback(callbackUrl, data).then((data) => {
+      console.log(`==============`);
       console.log(data);
+      console.log(`==============`);
     });
     return { code: 200, msg: 'success' };
   }
